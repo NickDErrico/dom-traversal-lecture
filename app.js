@@ -1,20 +1,17 @@
-// JS DOM
+var yello = document.querySelector(".primary-header-content");
+var rad = document.getElementsByClassName("primary-content")[0];
+var linxContainer = document.getElementById("header-links");
+var linx = document.querySelectorAll(".header-link-item");
+var dives = document.getElementsByTagName("div");
+var hachthree = document.getElementsByTagName("h3")[0];
 
-// DOM element selectors
-let paragraph = document.getElementsByTagName("p");
-let header = document.getElementsByClassName("primary-header")[0];
-let para = document.getElementsByClassName("para");
+yello.style.backgroundColor = "darkgrey";
 
-let para2 = document.querySelectorAll("p");
-let div = document.querySelectorAll("div");
+console.log(linx);
 
-console.log(div);
-console.log(paragraph);
+hachthree.style.fontSize = "5vh";
+hachthree.style.color = "white";
 
-// console.log(paragraph);
-// para2[0].style.backgroundColor = "green";
-div[1].innerHTML += "<p class='para'>look at me</p>";
-console.log(para[1].className);
-para[1].className = "";
-para2[0].innerHTML = "does this work";
-para2[0].innerText = "how about this";
+for (let i = 0; i < linx.length; i += 2) {
+  linx[i].draggable = true;
+}
